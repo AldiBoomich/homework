@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 200px;
+}
+fieldset {
+  width: 400px;
+  border-radius: 0px 0px 134px 0px;
+  -webkit-border-radius: 0px 0px 134px 0px;
+  -moz-border-radius: 0px 0px 134px 0px;
+}
+textarea {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  max-height: 200px;
+  min-height: 30px;
+  width: 200px;
+  resize: vertical;
+}
+.sexbox {
+  display: inline-block;
+  width: auto;
+}
+button {
+  display: block;
+  border: 0;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.ochko {
+  border-radius: 0px 200px 200px 0px;
+  -webkit-border-radius: 0px 200px 200px 0px;
+  -moz-border-radius: 0px 200px 200px 0px;
+  margin-block: 30px;
+}
+.siski{
+    display: inline;
+    width: auto;
+}
+

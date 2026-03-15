@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./4urok.css" />
+    <script src="./4urok.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <h1>Ваши личные данные</h1>
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Ваше имя" />
+        <label for="age">Возраст</label>
+        <input type="number" name="age" id="age" placeholder="ваш возраст" />
+        <label for="tel">Номер телефона</label>
+        <input
+          type="tel"
+          id="tel"
+          name="phone"
+          placeholder="Ваш номер телефона"
+        />
+        <label for="mail">Почта</label>
+        <input type="email" id="mail" name="email" placeholder="Ваш e-mail" />
+        <label for="sms">Сообщение</label>
+        <textarea
+          name="sms"
+          id="sms"
+          placeholder="Отправте Сообщение"
+        ></textarea>
+        <label for="checkbox">Я принимаю правила</label>
+        <input type="checkbox" name="checkbox" id="checkbox" class="sexbox" />
+        <button type="submit">Отправить</button>
+      </fieldset>
+      <fieldset class="ochko">
+        <h1>Как дела?</h1>
+        <label for="norm">норм</label>
+        <input type="radio" name="radio" id="norm" class="siski">
+      </fieldset>
+    </form>
+  </body>
+</html>
