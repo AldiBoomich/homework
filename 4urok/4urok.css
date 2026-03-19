@@ -1,12 +1,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 input {
   display: block;
   margin-bottom: 20px;
   margin-top: 5px;
   width: 200px;
+  transition: width 10s ;
 }
 fieldset {
   width: 400px;
@@ -18,30 +24,66 @@ textarea {
   display: block;
   margin-bottom: 20px;
   margin-top: 5px;
+  height: 20px;
+  width: 250px;
   max-height: 200px;
   min-height: 30px;
-  width: 200px;
   resize: vertical;
+  border-radius: 6px;
+  transition:  0.4s ;
 }
+textarea:hover {
+  height: 200px;
+  
+}
+
 .sexbox {
-  display: inline-block;
-  width: auto;
+  position: absolute !important;
+  outline: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  appearance: none !important;
+  cursor: pointer !important;
 }
-button {
+.sexbox::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  top: -27px;
+}
+.sexbox:checked::after{
+  background: url("./images/check-icon.svg") no-repeat #4caf50;
+}
+.sexbox-txt {
+  margin-left: 28px;
+  font-size: 18px;
+}
+.btn {
   display: block;
   border: 0;
   border-radius: 10px;
   padding: 5px 10px;
   cursor: pointer;
+  transition-duration: 0.4s;
+  margin-top: 10px;
 }
-.ochko {
-  border-radius: 0px 200px 200px 0px;
-  -webkit-border-radius: 0px 200px 200px 0px;
-  -moz-border-radius: 0px 200px 200px 0px;
-  margin-block: 30px;
-}
-.siski{
-    display: inline;
-    width: auto;
+.btn:hover {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+input:hover{
+
+  width: 100%;
+}   
+textarea:hover {
+  width: 100%;
+}
+.f:focus-visible {
+  outline: 2px solid #4caf50;
+}

@@ -4,41 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./4urok.css" />
+    <link rel="stylesheet" href="norm.css" />
     <script src="./4urok.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <form action="">
-      <fieldset>
-        <h1>Ваши личные данные</h1>
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" placeholder="Ваше имя" />
-        <label for="age">Возраст</label>
-        <input type="number" name="age" id="age" placeholder="ваш возраст" />
-        <label for="tel">Номер телефона</label>
-        <input
-          type="tel"
-          id="tel"
-          name="phone"
-          placeholder="Ваш номер телефона"
-        />
-        <label for="mail">Почта</label>
-        <input type="email" id="mail" name="email" placeholder="Ваш e-mail" />
-        <label for="sms">Сообщение</label>
-        <textarea
-          name="sms"
-          id="sms"
-          placeholder="Отправте Сообщение"
-        ></textarea>
-        <label for="checkbox">Я принимаю правила</label>
-        <input type="checkbox" name="checkbox" id="checkbox" class="sexbox" />
-        <button type="submit">Отправить</button>
-      </fieldset>
-      <fieldset class="ochko">
-        <h1>Как дела?</h1>
-        <label for="norm">норм</label>
-        <input type="radio" name="radio" id="norm" class="siski">
-      </fieldset>
-    </form>
+    <main class="main">
+      <form action="" class="form">
+        <fieldset>
+          <h1>Ваши личные данные</h1>
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" placeholder="Ваше имя" class="name f" />
+          <label for="age">Возраст</label>
+          <input type="number" name="age" id="age" placeholder="ваш возраст" class="age f" />
+          <label for="tel">Номер телефона</label>
+          <input
+            type="tel"
+            id="tel"
+            name="phone"
+            placeholder="Ваш номер телефона"
+            class="phone f"
+          />
+          <label for="mail">Почта</label>
+          <input
+            type="email"
+            id="mail"
+            name="email"
+            placeholder="Ваш e-mail"
+            class="email f"
+          />
+          <label for="sms">Сообщение</label>
+          <textarea
+            name="sms"
+            id="sms"
+            placeholder="Отправте Сообщение"
+            class="sms f"
+          ></textarea>
+          <label for="checkbox"></label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="sexbox f"
+          />
+          <span class="sexbox-txt">Казахстан</span>
+          <button type="submit" class="btn f">Отправить</button>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
