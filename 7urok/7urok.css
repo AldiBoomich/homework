@@ -11,12 +11,14 @@
   --second-family: "Oswald", sans-serif;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
+.header {
+  margin-bottom: 80px;
+}
 .header-inner {
   display: flex;
   margin: 0 auto;
@@ -99,4 +101,166 @@ footer {
   font-size: 14px;
   letter-spacing: 0.04em;
   color: var(--text-podpis);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero {
+  display: flex;
+  max-width: 1220px;
+  max-height: 513px;
+  gap: 28px;
+  position: relative;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  background: url("./svgs/декор.svg");
+  z-index: -1;
+}
+
+.hero-img-wrapper {
+  display: flex;
+  position: relative;
+}
+.hero-img {
+  max-width: 350px;
+}
+.hero-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.hero-btn-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+.big-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.title-hero {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--text-zagolovochnyy);
+}
+.txt-hero {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--text-nabornyy);
+  padding-top: 40px;
+}
+.hero-btn {
+  width: 270px;
+  height: 57px;
+  background-color: #3596ed;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.hero-choose {
+  position: absolute;
+  border: 1px solid var(--text-nabornyy);
+  padding: 22px;
+  width: 160px;
+  height: 86px;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text-zagolovochnyy);
+  background: rgba(255, 255, 255, 0.9);
+}
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1220px;
+  max-height: 342px;
+  gap: 28px;
+}
+.news-img {
+  max-width: 284px;
+  max-height: 203px;
+}
+.news-title-wrapper {
+  min-width: 1220px;
+}
+.news-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  gap: 10px;
+}
+.news-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--text-zagolovochnyy);
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+.news-txt {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-podpis);
+}
+.news-mini-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--text-zagolovochnyy);
+}
+.news-link {
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--akcent);
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.news-link::after{
+  position: absolute;
+  content: "";
+  background: url("./svgs/стрелка.svg");
+  width: 22px;
+  height: 9px;
+  top: 50%;
+  left: 33%;
+  transform: translateY(-50%);
 }
