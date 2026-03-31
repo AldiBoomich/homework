@@ -1,0 +1,18 @@
+@media (width > 768px) {
+  .burger {
+    display: none;
+  }
+}
+@media (width <= 768px) {
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger__icon-burger .burger--open .burger__icon-cross {
+    display: block;
+  }
+  .burger__icon-cross .burger--open .burger__icon-burger {
+    display: none;
+  }
+}
