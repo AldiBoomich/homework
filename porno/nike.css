@@ -2,6 +2,7 @@
 @import "./header.css";
 @import "./menu.css";
 @import "./burger.css";
+@import "./hero.css";
 
 :root {
   --main-color: #fff;
@@ -16,6 +17,7 @@
 
   --transition-time: 0.2s;
 
+  --layer-negative:-1;
   --layer-1: 1;
   --layer-2: 2;
   --layer-3: 3;

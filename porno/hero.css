@@ -1,0 +1,79 @@
+.hero {
+  position: relative;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 742px;
+  padding-top: 80px;
+}
+
+.hero__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.hero__img {
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--layer-negative);
+}
+.hero__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 128px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.hero__benefits-list {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hero__benefits-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+.hero__details {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  transition: color var(--transition-time);
+}
+.hero__footer {
+  text-align: end;
+  padding-bottom: 20px;
+}
+.hero__title-accent {
+  -webkit-text-stroke: 3px var(--accent-color);
+  color: transparent;
+}
+
+@media (any-hover: hover) {
+  .hero__details:hover {
+    color: var(--accent-color);
+  }
+}
+
+.hero__details-icon {
+  stroke: currentColor;
+}
