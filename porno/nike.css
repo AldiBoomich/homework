@@ -3,6 +3,7 @@
 @import "./menu.css";
 @import "./burger.css";
 @import "./hero.css";
+@import "./air-mag.css";
 
 :root {
   --main-color: #fff;
@@ -17,7 +18,7 @@
 
   --transition-time: 0.2s;
 
-  --layer-negative:-1;
+  --layer-negative: -1;
   --layer-1: 1;
   --layer-2: 2;
   --layer-3: 3;
@@ -32,6 +33,7 @@ a {
 .page {
   font-family: Montserrat;
   color: var(--main-color);
+  scroll-padding-top: 98px;
 }
 .page__body {
   background-color: var(--bg-color);
@@ -46,6 +48,28 @@ button:focus-visible {
   outline: 1px solid var(--accent-color);
   outline-offset: 2px;
 }
-.page__body--no-scroll{
+.page__body--no-scroll {
   overflow-y: hidden;
+}
+.text-regular,
+.text-light {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-color);
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-light {
+  font-weight: 300;
+}
+.title-md {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: clamp(2rem, 0.936rem + 4.54vw, 3.75rem);
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+img{
+  object-fit: cover;
 }
