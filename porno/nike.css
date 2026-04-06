@@ -4,14 +4,22 @@
 @import "./burger.css";
 @import "./hero.css";
 @import "./air-mag.css";
+@import "./product.css";
 
 :root {
   --main-color: #fff;
+  --main-glow-color: #ffffff4d;
   --accent-color: #ffea00;
+  --accent-glow-color: #ffea004d;
   --bg-color: #2a2a29;
   --secondary-color: #c9c69b;
-  --disable-color: #5d5d56;
+  --disabled-color: #5d5d56;
+  --disabled-glow-color: #5d5d56;
   --shadow-color: #181817;
+
+  --shadow-glow: 0 0 6px 2px var(--main-glow-color);
+  --shadow-accent-glow: 0 0 6px 2px var(--accent-glow-color);
+  --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color);
 
   --container-width: 1240px;
   --container-padding: 15px;
@@ -63,13 +71,36 @@ button:focus-visible {
 .text-light {
   font-weight: 300;
 }
+.title-sm,
 .title-md {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: clamp(2rem, 0.936rem + 4.54vw, 3.75rem);
   text-transform: uppercase;
   color: var(--main-color);
 }
-img{
+.title-md {
+  font-size: clamp(2rem, 0.936rem + 4.54vw, 3.75rem);
+}
+.title-sm {
+  /* min-width=375px max-width: 768px; */
+  font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
+}
+img {
   object-fit: cover;
+}
+@media (width > 576px) {
+  .section {
+    padding-bottom: 140px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+@media (width <= 576px) {
+  .section {
+    padding-bottom: 80px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
