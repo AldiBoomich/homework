@@ -5,6 +5,10 @@
 @import "./hero.css";
 @import "./air-mag.css";
 @import "./product.css";
+@import "./characteristics.css";
+@import "./top-models.css";
+@import "./top-models.css";
+
 
 :root {
   --main-color: #fff;
