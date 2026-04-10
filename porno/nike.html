@@ -49,7 +49,7 @@
               <a href="#characteristics" class="menu__link">Характеристики</a>
             </li>
             <li class="menu__item">
-              <a href="#top__models" class="menu__link">Другие ТОП модели</a>
+              <a href="#top-models" class="menu__link">Другие ТОП модели</a>
             </li>
           </ul>
         </nav>
@@ -89,11 +89,11 @@
               <svg width="24" height="24">
                 <use
                   class="burger__icon-burger"
-                  href="./icons/sprite.svg#menu-burger"
+                  href="./icons/sprite.svg#burger"
                 ></use>
                 <use
                   class="burger__icon-cross"
-                  href="./icons/sprite.svg#menu-cross"
+                  href="./icons/sprite.svg#cross"
                 ></use>
               </svg>
             </button>
@@ -313,7 +313,13 @@
                   </button>
                 </div>
                 <div class="product__buy-wrapper">
-                  <button class="product__buy-button">Купить в 1 клик</button>
+                  <button
+                    class="product__buy-button"
+                    data-modal-button="buy"
+                    data-modal-seed="300"
+                  >
+                    Купить в 1 клик
+                  </button>
                   <button
                     class="product__cart-button"
                     aria-label="Добавить в корзину"
@@ -522,10 +528,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs1.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs1.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs1.png"
@@ -551,10 +554,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs2.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs2.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs2.png"
@@ -580,10 +580,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs3.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs3.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs3.png"
@@ -609,10 +606,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs4.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs4.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs4.png"
@@ -638,10 +632,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs5.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs5.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs5.png"
@@ -667,10 +658,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs6.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs6.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs6.png"
@@ -696,10 +684,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs7.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs7.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs7.png"
@@ -725,10 +710,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs8.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs8.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs8.png"
@@ -754,10 +736,7 @@
                   </svg>
                 </div>
                 <picture class="top-models__product-img-wrapper">
-                  <source
-                    srcset="./images/boobs9.webp"
-                    type="image/webp"
-                  />
+                  <source srcset="./images/boobs9.webp" type="image/webp" />
                   <img
                     class="top-models__product-img"
                     src="./images/boobs9.png"
@@ -773,5 +752,78 @@
         </div>
       </section>
     </main>
+    <footer class="footer__footer">
+      <div class="footer__container">
+        <div class="footer__img-wrapper">
+          <img
+            src="./icons/nike-logo.svg"
+            alt=""
+            class="footer__img"
+            width="50"
+            height="20"
+          />
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#air-mag">Air Mag</a></li>
+          <li class="footer__item"><a href="#sizes">Размеры</a></li>
+          <li class="footer__item">
+            <a href="#characteristics">Характеристики</a>
+          </li>
+          <li class="footer__item">
+            <a href="#top-models">Другие ТОП модели</a>
+          </li>
+        </ul>
+
+        <a href="tel:+7 (929) 299-29-29" class="footer__link"
+          >+7 (929) 299-29-29</a
+        >
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__window modal-buy" data-modal-window="buy">
+        <button
+          class="modal__close"
+          aria-label="закрыть"
+          title="закрыть"
+          data-modal-close
+        >
+          <svg width="24" height="24">
+            <use
+              class="burger__icon-cross"
+              href="./icons/sprite.svg#cross"
+            ></use>
+          </svg>
+        </button>
+        <div class="modal__content modal-buy__content">
+          <h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
+          <form action="" class="modal-buy__form">
+            <label class="modal-buy__label">
+              <input
+                type="text"
+                class="modal-buy__input"
+                placeholder="Ваше имя"
+                required
+                name="name"
+              />
+              <input
+                type="tel"
+                class="modal-buy__input"
+                placeholder="Ваше номер"
+                required
+                name="phone"
+              />
+              <input
+                type="email"
+                class="modal-buy__input"
+                placeholder="Ваша почта"
+                required
+                name="email"
+              />
+              <button class="modal-buy__submit">Отправить</button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
